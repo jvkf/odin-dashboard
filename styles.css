@@ -4,6 +4,15 @@ ul {
   padding: 0;
 }
 
+:root {
+  --white: #ffffff;
+  --light-grey: #e2e8f0;
+  --black: #000000;
+  --orange: #f0b429;
+  --blue-light: #1a92d4;
+  --text-color: #d0d0d0;
+}
+
 /* Start of first layout settings */
 
 .dashboard {
@@ -17,21 +26,22 @@ ul {
   grid-template-areas:
     "sidebar header"
     "sidebar main-content";
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 5fr;
 }
 
 .sidebar {
   grid-area: sidebar;
-  background-color: #1a92d4;
+  background-color: var(--blue-light);
   position: relative;
   z-index: 2;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5);
+  padding: 0 2em;
 }
 
 .header {
   grid-area: header;
-  background-color: #ffffff;
+  background-color: var(--white);
   box-shadow: 2px 0 14px 0px rgba(0, 0, 0, 0.3);
   position: relative;
   z-index: 1;
@@ -39,7 +49,37 @@ ul {
 
 .main-content {
   grid-area: main-content;
-  background: #e2e8f0;
+  background: var(--light-grey);
 }
 
 /* End of first layout settings */
+
+/* Start of sidebar stylings */
+
+.sidebar {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-auto-flow: row;
+  align-content: start;
+  row-gap: 50px;
+}
+.sidebar-title {
+  font-size: 2.2rem;
+  color: var(--white);
+}
+
+.navigation-content,
+.navigation-options {
+  color: var(--white);
+  font-size: 1.2rem;
+  display: grid;
+  gap: 20px;
+  font-weight: 500;
+}
+
+.navigation-content_item,
+.navigation-options_item {
+  cursor: pointer;
+}
+
+/* End of sidebar stylings */

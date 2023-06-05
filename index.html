@@ -11,7 +11,7 @@
 
 <body class="dashboard">
   <nav class="sidebar">
-    <h1>Dashboard</h1>
+    <h1 class="sidebar-title">Dashboard</h1>
 
     <ul class="navigation-content">
       <li class="navigation-content_item">Home</li>
@@ -22,12 +22,35 @@
       <li class="navigation-content_item">Communities</li>
     </ul>
     <ul class="navigation-options">
-      <li class="navication-options_item">Settings</li>
-      <li class="navication-options_item">Support</li>
-      <li class="navication-options_item">Privacy</li>
+      <li class="navigation-options_item">Settings</li>
+      <li class="navigation-options_item">Support</li>
+      <li class="navigation-options_item">Privacy</li>
     </ul>
   </nav>
-  <header class="header"></header>
+  <header class="header">
+    <div class="header-upper-part">
+      <form>
+        <button type="submit">Search</button>
+        <input type="text" name="search" placeholder="Search...">
+      </form>
+      <div class="profile-options">
+        <button class="profile-options_notification">Bell</button>
+        <img src="" alt="" class="profile-options_avatar">
+        <p class="profile-option_username">Morgan Oakley</p>
+      </div>
+    </div>
+    <div class="header-down-part">
+      <div class="greeting">
+        <img src="" alt="" class="greeting_avatar">
+        <p>Hi there,<br> Morgan Oakley (@morgan)</p>
+      </div>
+      <div class="actions">
+        <button class="actions_button">New</button>
+        <button class="actions_button">Upload</button>
+        <button class="actions_button">Share</button>
+      </div>
+    </div>
+  </header>
   <main class="main-content"></main>
 </body>
 
