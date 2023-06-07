@@ -29,9 +29,9 @@
   </nav>
   <header class="header">
     <div class="header-upper-part">
-      <form>
+      <form class="search-container">
         <button type="submit">Search</button>
-        <input type="text" name="search" placeholder="Search...">
+        <input type="text" name="search" class="search-input">
       </form>
       <div class="profile-options">
         <button class="profile-options_notification">Bell</button>
@@ -51,7 +51,47 @@
       </div>
     </div>
   </header>
-  <main class="main-content"></main>
+  <main class="main-content">
+    <section class="projects">
+      <h2 class="projects-title">Your Projects</h2>
+      <ul class="projects-container">
+        <li class="project-item">
+          <h3 class="project-item_title">Super Cool Project</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fugit, corporis accusamus odit vitae minus
+            ipsum perfer.</p>
+          <div class="project-item_links"><button class="project-item_action">
+              Star
+            </button>
+            <button class="project-item_action">Look</button>
+            <button class="project-item_action">Share</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <aside class="announcements">
+      <h2>Announcements</h2>
+      <ul class="announcements-container">
+        <li class="announcements-item">
+          <h4>Site Maintenance</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </li>
+        <li class="announcements-item"></li>
+        <li class="announcements-item"></li>
+      </ul>
+    </aside>
+    <aside class="trending">
+      <h2>Trending</h2>
+      <ul class="trending-container">
+        <li class="trending-item">
+          <img src="" alt="">
+          <div>
+            <h5>Tegan</h5>
+            <p>World Peace Builder</p>
+          </div>
+        </li>
+      </ul>
+    </aside>
+  </main>
 </body>
 
 </html>

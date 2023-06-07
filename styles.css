@@ -83,3 +83,75 @@ ul {
 }
 
 /* End of sidebar stylings */
+
+/* Start of header stylings */
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.header-upper-part,
+.header-down-part {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  justify-items: space-between;
+  padding: 0 2em;
+}
+
+.search-container {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 20px;
+  margin-right: 3em;
+}
+.search-input {
+  width: 100%;
+  background-color: var(--light-grey);
+  border: none;
+  padding: 1em;
+  border-radius: 50px;
+}
+
+.profile-options {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.greeting {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+/* End of header stylings */
+
+/* Start of main-content positioning */
+
+.main-content {
+  display: grid;
+  grid-template-areas:
+    "projects announcements"
+    "projects trending";
+  grid-template-columns: 2fr 1fr;
+}
+
+.projects {
+  grid-area: projects;
+}
+
+.announcements {
+  grid-area: announcements;
+}
+
+.trending {
+  grid-area: trending;
+}
+
+/* End of main-content positioning */
