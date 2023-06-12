@@ -7,47 +7,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <title>Dashboard</title>
+  <script src="https://kit.fontawesome.com/0429980843.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="dashboard">
   <nav class="sidebar">
-    <h1 class="sidebar-title">Dashboard</h1>
+    <h1 class="sidebar-title"><i class="fa-solid fa-bars"></i>Dashboard</h1>
 
     <ul class="navigation-content">
-      <li class="navigation-content_item">Home</li>
-      <li class="navigation-content_item">Profile</li>
-      <li class="navigation-content_item">Messages</li>
-      <li class="navigation-content_item">History</li>
-      <li class="navigation-content_item">Tasks</li>
-      <li class="navigation-content_item">Communities</li>
+      <li class="navigation-content_item"><i class="fa-solid fa-house"></i>Home</li>
+      <li class="navigation-content_item"><i class="fa-solid fa-user"></i>Profile</li>
+      <li class="navigation-content_item"><i class="fa-solid fa-envelope"></i>Messages</li>
+      <li class="navigation-content_item"><i class="fa-solid fa-clock-rotate-left"></i>History</li>
+      <li class="navigation-content_item"><i class="fa-solid fa-list-check"></i>Tasks</li>
+      <li class="navigation-content_item"><i class="fa-regular fa-comments"></i>Communities</li>
     </ul>
     <ul class="navigation-options">
-      <li class="navigation-options_item">Settings</li>
-      <li class="navigation-options_item">Support</li>
-      <li class="navigation-options_item">Privacy</li>
+      <li class="navigation-options_item"><i class="fa-solid fa-gear"></i>Settings</li>
+      <li class="navigation-options_item"><i class="fa-solid fa-ticket"></i>Support</li>
+      <li class="navigation-options_item"><i class="fa-solid fa-shield"></i>Privacy</li>
     </ul>
   </nav>
   <header class="header">
     <div class="header-upper-part">
       <form class="search-container">
-        <button type="submit">Search</button>
+        <button type="submit" class="icon-button"><i class="fa-solid fa-magnifying-glass"></i></button>
         <input type="text" name="search" class="search-input">
       </form>
       <div class="profile-options">
-        <button class="profile-options_notification">Bell</button>
-        <img src="" alt="" class="profile-options_avatar">
+        <button class="profile-options_notification icon-button"><i class="fa-regular fa-bell"></i></button>
+        <i class="fa-solid fa-user-tie profile-options_avatar"></i>
         <p class="profile-option_username">Morgan Oakley</p>
       </div>
     </div>
     <div class="header-down-part">
       <div class="greeting">
-        <img src="" alt="" class="greeting_avatar">
-        <p>Hi there,<br> Morgan Oakley (@morgan)</p>
+        <i class="fa-solid fa-user-tie greeting-avatar"></i>
+        <p>Hi there,<br> <span class="greeting-name">Morgan Oakley (@morgan)</span></p>
       </div>
       <div class="actions">
-        <button class="actions_button">New</button>
-        <button class="actions_button">Upload</button>
-        <button class="actions_button">Share</button>
+        <button class="actions-button">New</button>
+        <button class="actions-button">Upload</button>
+        <button class="actions-button"><i class="fa-solid fa-share-from-square"></i></button>
       </div>
     </div>
   </header>
@@ -55,15 +56,48 @@
     <section class="projects">
       <h2 class="projects-title">Your Projects</h2>
       <ul class="projects-container">
-        <li class="project-item">
-          <h3 class="project-item_title">Super Cool Project</h3>
+        <li class="projects-item">
+          <h3 class="projects-item_title">Super Cool Project</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fugit, corporis accusamus odit vitae minus
             ipsum perfer.</p>
-          <div class="project-item_links"><button class="project-item_action">
-              Star
+          <div class="projects-item_links"><button class="projects-item_action">
+              <i class="fa-solid fa-star"></i>
             </button>
-            <button class="project-item_action">Look</button>
-            <button class="project-item_action">Share</button>
+            <button class="projects-item_action"><i class="fa-solid fa-eye"></i></button>
+            <button class="projects-item_action"><i class="fa-solid fa-share-from-square"></i></button>
+          </div>
+        </li>
+        <li class="projects-item">
+          <h3 class="projects-item_title">Super Cool Project</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fugit, corporis accusamus odit vitae minus
+            ipsum perfer.</p>
+          <div class="projects-item_links"><button class="projects-item_action">
+              <i class="fa-solid fa-star"></i>
+            </button>
+            <button class="projects-item_action"><i class="fa-solid fa-eye"></i></button>
+            <button class="projects-item_action"><i class="fa-solid fa-share-from-square"></i></button>
+          </div>
+        </li>
+        <li class="projects-item">
+          <h3 class="projects-item_title">Super Cool Project</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fugit, corporis accusamus odit vitae minus
+            ipsum perfer.</p>
+          <div class="projects-item_links"><button class="projects-item_action">
+              <i class="fa-solid fa-star"></i>
+            </button>
+            <button class="projects-item_action"><i class="fa-solid fa-eye"></i></button>
+            <button class="projects-item_action"><i class="fa-solid fa-share-from-square"></i></button>
+          </div>
+        </li>
+        <li class="projects-item">
+          <h3 class="projects-item_title">Super Cool Project</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fugit, corporis accusamus odit vitae minus
+            ipsum perfer.</p>
+          <div class="projects-item_links"><button class="projects-item_action">
+              <i class="fa-solid fa-star"></i>
+            </button>
+            <button class="projects-item_action"><i class="fa-solid fa-eye"></i></button>
+            <button class="projects-item_action"><i class="fa-solid fa-share-from-square"></i></button>
           </div>
         </li>
       </ul>
@@ -72,11 +106,17 @@
       <h2>Announcements</h2>
       <ul class="announcements-container">
         <li class="announcements-item">
-          <h4>Site Maintenance</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <h4 class="announcements-item_title">Site Maintenance</h4>
+          <p class="announcements-item_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </li>
-        <li class="announcements-item"></li>
-        <li class="announcements-item"></li>
+        <li class="announcements-item">
+          <h4 class="announcements-item_title">Site Maintenance</h4>
+          <p class="announcements-item_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </li>
+        <li class="announcements-item">
+          <h4 class="announcements-item_title">Site Maintenance</h4>
+          <p class="announcements-item_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </li>
       </ul>
     </aside>
     <aside class="trending">
@@ -84,8 +124,29 @@
       <ul class="trending-container">
         <li class="trending-item">
           <img src="" alt="">
-          <div>
-            <h5>Tegan</h5>
+          <div class="trending-item_text">
+            <h5>@Tegan</h5>
+            <p>World Peace Builder</p>
+          </div>
+        </li>
+        <li class="trending-item">
+          <img src="" alt="">
+          <div class="trending-item_text">
+            <h5>@Tegan</h5>
+            <p>World Peace Builder</p>
+          </div>
+        </li>
+        <li class="trending-item">
+          <img src="" alt="">
+          <div class="trending-item_text">
+            <h5>@Tegan</h5>
+            <p>World Peace Builder</p>
+          </div>
+        </li>
+        <li class="trending-item">
+          <img src="" alt="">
+          <div class="trending-item_text">
+            <h5>@Tegan</h5>
             <p>World Peace Builder</p>
           </div>
         </li>
